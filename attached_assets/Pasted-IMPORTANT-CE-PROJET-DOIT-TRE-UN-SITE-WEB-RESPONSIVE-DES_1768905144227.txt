@@ -1,0 +1,160 @@
+IMPORTANT : CE PROJET DOIT ÊTRE UN SITE WEB RESPONSIVE (DESKTOP + MOBILE), PAS UNE APPLICATION MOBILE.
+NE PAS UTILISER React Native, Expo, navigation par tabs en bas, ni le concept de “screens”.
+C’est un site vitrine classique avec un header (navbar en haut), des pages web, et un footer.
+
+OBJECTIF
+Créer un site vitrine premium en FR pour une agence : “C.D.CALL – Performance & Acquisition”.
+Thème : digitalisation, création de sites web, SEO, Meta Ads, tracking, génération de leads.
+Style : bleu nuit/gris clair avec accent orange. Design moderne, crédible, orienté conversion.
+
+STACK OBLIGATOIRE
+- Next.js (App Router) + TypeScript
+- TailwindCSS
+- Composants réutilisables (Navbar, Footer, Container, Section, Card, Button, FAQAccordion, etc.)
+- Optionnel : Framer Motion (animations discrètes uniquement)
+
+ASSETS
+- Le logo est cdcall.png → place-le dans /public et utilise-le dans la navbar + hero.
+
+ROUTES / PAGES
+1) /               → Accueil
+2) /a-propos       → À propos
+3) /services       → Services
+4) /audit-contact  → Audit & Contact
+
+EXIGENCES RESPONSIVE (très important)
+- Desktop-first : rendu magnifique sur ordinateur (>= 1280px), puis responsive mobile.
+- Utiliser un container global : max-w-7xl mx-auto px-6 lg:px-10
+- Utiliser des grilles sur desktop :
+  - Hero en 2 colonnes dès lg (texte gauche, visuel / carte droite)
+  - Offres en 3 colonnes dès lg (lg:grid-cols-3)
+  - Clients en 2 colonnes dès md
+- Navbar :
+  - liens visibles en ligne dès md
+  - menu burger uniquement sur mobile
+- Typo confortable :
+  - titres : text-4xl lg:text-6xl
+  - paragraphes : text-base lg:text-lg leading-relaxed
+- Espacements : sections py-16 lg:py-24
+
+CONTENU LONG (OBLIGATOIRE)
+Chaque page doit avoir du contenu long et riche (pas des mini phrases).
+Je veux :
+- des paragraphes complets
+- des listes détaillées
+- des exemples concrets
+- une méthode de travail claire
+- des CTA réguliers
+- une FAQ (5 à 8 questions avec réponses longues)
+Le ton doit être crédible (agence sérieuse), pas “blabla marketing”.
+
+NAVBAR (toutes pages)
+- Logo + “C.D.CALL”
+- Liens : Accueil / À propos / Services / Audit & Contact
+- Bouton CTA : “Demander un audit”
+
+FOOTER (toutes pages)
+- Résumé court + liens + placeholders (email / WhatsApp / ville)
+- Mention : “© C.D.CALL – Performance & Acquisition”
+
+========================
+PAGE ACCUEIL (/) — CONTENU LONG
+========================
+1) HERO (long)
+- Titre : “Digitalisez. Attirez. Convertissez.”
+- Sous-titre (2–3 phrases) : expliquer qu’on construit un système complet (site + SEO + Ads + tracking)
+- CTA1 : “Demander un audit gratuit” → /audit-contact
+- CTA2 : “Voir nos services” → /services
+- Mini preuve : “Approche orientée ROI • Tracking clair • Itérations rapides”
+
+2) SECTION “Pourquoi la digitalisation est devenue obligatoire ?” (long)
+- 3–5 paragraphes détaillés (comportement client, recherche Google, confiance, vitesse, avis)
+- Encadré “Erreurs fréquentes” (liste de 6–8 erreurs)
+
+3) SECTION “Ce que nous faisons” (4 blocs longs)
+A) Création site web (vitrine/landing/WordPress)
+B) SEO (audit technique, on-page, contenu, Search Console)
+C) Meta Ads (Facebook/Instagram) + génération de leads
+D) Tracking & reporting (GA4, GTM, événements, tableaux)
+Pour chaque bloc :
+- explication longue (pourquoi)
+- livrables (liste)
+- exemple concret (mini scénario)
+
+4) SECTION OFFRES (3 cartes + détails longs sous chaque carte)
+Afficher 3 cartes (pack) avec les textes EXACTS, puis un développement long sous chaque pack :
+- pour qui
+- livrables détaillés
+- délai indicatif
+- résultats attendus (sans promesses irréalistes)
+- prérequis
+
+Offre 1 : Pack PRÉSENCE (Focus WordPress & SEO)
+Texte : "Un site WordPress professionnel n'est rien s'il n'est pas vu. Nous combinons design moderne et SEO technique pour que vos clients vous trouvent avant vos concurrents."
+Mots-clés : Création site vitrine, expert WordPress, référencement naturel France.
+
+Offre 2 : Pack ACQUISITION (Focus Meta Ads & Leads)
+Texte : "Arrêtez de courir après les clients. Nous installons un système de génération de leads qualifiés via Meta Ads (Facebook & Instagram). Chaque euro investi est tracké pour maximiser vos ventes."
+Mots-clés : Publicité Facebook, génération de leads qualifiés, expert Meta Ads.
+
+Offre 3 : Pack DOMINATION (Focus Organique & Autorité)
+Texte : "Prenez le leadership. Nous gérons votre Facebook organique pour créer une communauté fidèle et poussons votre SEO au niveau national."
+
+5) SECTION “Notre méthode” (6 étapes, long)
+Audit → Stratégie → Mise en place → Tracking → Acquisition → Optimisation
+Chaque étape a un paragraphe + livrables.
+
+6) SECTION “Clients” (obligatoire)
+Cartes cliquables + description (2–3 lignes) :
+- Culture Habitat → https://culturehabitat.com/
+- OBF Energie → https://obfenergie.fr/
+
+7) SECTION KPI / Reporting (long)
+Expliquer : CPL, CPA, CTR, CPM, taux conv, qualité lead, events, attribution, etc.
+
+8) FAQ (5 à 8 questions avec réponses longues)
++ CTA final vers /audit-contact
+
+========================
+PAGE À PROPOS (/a-propos) — CONTENU LONG
+========================
+- Mission, vision, valeurs (paragraphes)
+- Pourquoi “Performance & Acquisition”
+- “Comment on travaille” (cadre, communication, planning, reporting)
+- Outils utilisés (WordPress, GA4, GTM, Search Console, Meta Ads Manager…)
+- Engagements (transparence, accès comptes, propriété, tracking)
+- CTA
+
+========================
+PAGE SERVICES (/services) — TRÈS DÉTAILLÉE
+========================
+Créer 4 sections longues :
+1) Sites web (vitrine/landing/WordPress) : structure, copywriting, vitesse, SEO-ready, livrables
+2) SEO : audit technique, sémantique, contenu, on-page, maillage, timing réaliste
+3) Meta Ads : setup, pixel/events, créas, structure campagnes, retargeting, optimisation
+4) Tracking & reporting : GA4/GTM, events, dashboards, règles de décision
+Ajouter :
+- “Pour qui ?”
+- “Exemples de cas d’usage”
+- mini FAQ
+- CTA
+
+========================
+PAGE AUDIT & CONTACT (/audit-contact) — COMPLET
+========================
+- Explication longue de l’audit gratuit (ce que vous analysez et ce que vous remettez)
+- Formulaire (front only, pas besoin backend) :
+  Nom, Email, Téléphone, Site (optionnel), Secteur, Objectif (select), Budget (optionnel), Message
+- Validation simple + message de succès
+- Bloc “Après envoi : étapes” (3 étapes)
+- Coordonnées placeholders (email + WhatsApp)
+
+SEO / TECHNIQUE
+- Ajouter metadata Next.js par page (title/description)
+- OpenGraph basique
+- Next/Image pour logo
+- Un README.md clair (install, dev, build)
+
+LIVRAISON
+Génère tout le projet complet. Vérifie que “npm install” puis “npm run dev” fonctionne.
+Assure-toi que c’est un SITE WEB (pages web), pas une app mobile.
