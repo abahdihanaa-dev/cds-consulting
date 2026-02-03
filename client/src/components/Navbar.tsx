@@ -2,7 +2,7 @@ import { Link, useLocation } from "wouter";
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@assets/cdcall_1768905138853.png";
+import logo from "@assets/cdcall-logo.png";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
