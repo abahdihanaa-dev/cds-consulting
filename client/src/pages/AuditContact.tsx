@@ -119,10 +119,10 @@ export default function AuditContact() {
                 <div>
                   <div className="font-bold">Téléphone</div>
                   <a
-                    href="tel:+33123456789"
+                    href="tel:+33745049370"
                     className="text-slate-400 text-sm hover:text-white transition-colors"
                   >
-                    +33 1 23 45 67 89
+                    +33 745 04 93 70
                   </a>
                 </div>
               </div>
