@@ -38,11 +38,24 @@ export function Footer() {
             </p>
 
             <div className="flex gap-4">
-              {[Facebook, Instagram].map((Icon, i) => (
+              {[
+                {
+                  Icon: Facebook,
+                  label: "Facebook",
+                  href: "https://web.facebook.com/profile.php?id=61587047591941",
+                },
+                {
+                  Icon: Instagram,
+                  label: "Instagram",
+                  href: "https://www.instagram.com/c.d.call1/",
+                },
+              ].map(({ Icon, label, href }) => (
                 <a
-                  key={i}
-                  href="#"
-                  aria-label={Icon === Facebook ? "Facebook" : "Instagram"}
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
                   className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-accent hover:text-white transition-all duration-300"
                 >
                   <Icon className="w-5 h-5" />
@@ -119,12 +132,12 @@ export function Footer() {
           <p>© {new Date().getFullYear()} C.D.CALL. Tous droits réservés.</p>
 
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">
+            <Link href="/mentions-legales" className="hover:text-white transition-colors">
               Mentions Légales
-            </a>
-            <a href="#" className="hover:text-white transition-colors">
+            </Link>
+            <Link href="/politique-confidentialite" className="hover:text-white transition-colors">
               Politique de Confidentialité
-            </a>
+            </Link>
           </div>
         </div>
       </div>

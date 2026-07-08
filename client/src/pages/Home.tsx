@@ -504,7 +504,7 @@ export default function Home() {
 
       {/* OPS Finance */}
       <a
-        href="https://www.opsfinances.fr"
+        href="https://www.opsfinance.fr"
         target="_blank"
         rel="noopener noreferrer"
         className="transition-transform duration-300 hover:scale-[1.03]"
