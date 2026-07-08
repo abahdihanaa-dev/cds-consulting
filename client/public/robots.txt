@@ -3,5 +3,4 @@ Allow: /
 Disallow: /api/
 
 Sitemap: https://cdcall.fr/sitemap.xml
-LLM: https://cdcall.fr/llms.txt
 Host: https://cdcall.fr
