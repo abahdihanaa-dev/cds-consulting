@@ -12,7 +12,7 @@ const sections = [
   {
     title: "Coordonnées",
     content:
-      " cds consulting – 2 Rue du Palatin, 42110 Feurs, France. Téléphone : +33 7 45 04 93 70. Email : contact@cdsconsulting.fr",
+      " cds consulting – 82, Rue Soumaya, Residence Chehrazade 1, 3 Eme Etage, N°13, Palmiers - Casablanca. Téléphone : +33 7 45 04 93 70. Email : contact@cdsconsulting.fr",
   },
   {
     title: "Hébergement",

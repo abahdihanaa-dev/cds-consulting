@@ -478,6 +478,23 @@ export default function Home() {
           loading="lazy"
         />
       </a>
+
+      {/* CD CALL */}
+      <a
+        href="https://cdcall.fr/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition-transform duration-300 hover:scale-[1.03]"
+        title="Visiter le site C.D.CALL"
+      >
+        <img
+          src="/clients-imgs/cdcall.png"
+          alt="Logo CD CALL"
+          className="h-12 md:h-20 w-auto object-contain"
+          loading="lazy"
+        />
+      </a>
+
     </div>
 
   </div>
