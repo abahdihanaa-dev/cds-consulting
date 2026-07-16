@@ -8,17 +8,27 @@
   --font-display: 'Outfit', sans-serif;
   --font-body: 'Plus Jakarta Sans', sans-serif;
 
-  /* Navy Blue Palette */
-  --primary: 222 47% 11%;      /* #0f172a - Slate 900 */
+  /* CDS Consulting design tokens */
+  --brand-navy: #092149;
+  --brand-navy-dark: #03152e;
+  --brand-blue-dark: #0a4bbd;
+  --brand-blue: #066fe5;
+  --brand-blue-light: #5890d8;
+  --background-light: #f4f8fd;
+  --background-soft: #f8fafd;
+  --border-light: #dce4ef;
+  --text-primary: #091c3c;
+  --text-secondary: #5a6b84;
+  --white: #ffffff;
+  --brand-gradient: linear-gradient(135deg, #092149 0%, #0a4bbd 55%, #066fe5 100%);
+  --header-height: 76px;
+
+  --primary: 218 78% 16%;
   --primary-foreground: 210 40% 98%;
-
-  /* Orange Accent */
-  --accent: 24 95% 53%;        /* #f97316 - Orange 500 */
+  --accent: 211 95% 46%;
   --accent-foreground: 0 0% 100%;
-
-  /* Neutral/Light */
-  --background: 210 40% 98%;   /* #f8fafc - Slate 50 */
-  --foreground: 222 47% 11%;   /* #0f172a - Slate 900 */
+  --background: 213 67% 97%;
+  --foreground: 219 74% 14%;
   
   --secondary: 210 40% 96%;
   --secondary-foreground: 222 47% 11%;
@@ -31,15 +41,28 @@
 
   --border: 214 32% 91%;
   --input: 214 32% 91%;
-  --ring: 24 95% 53%;
+  --ring: 211 95% 46%;
 
   --radius: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --header-height: 88px;
+  }
 }
 
 @layer base {
   body {
     @apply bg-background text-foreground antialiased selection:bg-accent/20 selection:text-accent-foreground;
     font-family: var(--font-body);
+    overflow-x: hidden;
+  }
+
+  body[data-scroll-locked] {
+    overflow: auto !important;
+    overscroll-behavior: auto !important;
+    touch-action: auto !important;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -50,6 +73,8 @@
   /* Smooth scroll behavior */
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 92px;
+    scrollbar-gutter: stable;
   }
 }
 
@@ -67,7 +92,7 @@
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center rounded-xl bg-white border-2 border-slate-200 px-6 py-3 text-sm font-medium text-primary shadow-sm transition-all hover:bg-slate-50 hover:border-slate-300 hover:text-accent hover:-translate-y-0.5 active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400;
+    @apply inline-flex items-center justify-center rounded-xl bg-white border-2 border-accent/30 px-6 py-3 text-sm font-medium text-primary shadow-sm transition-all hover:bg-blue-50 hover:border-accent hover:text-accent hover:-translate-y-0.5 active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent;
   }
 
   .card-gradient {
@@ -89,6 +114,36 @@
   }
 }
 
+.hero-chart-line {
+  stroke-dasharray: 900;
+  stroke-dashoffset: 900;
+  animation: drawHeroChart 1.2s 0.35s ease-out forwards;
+}
+
+@keyframes drawHeroChart {
+  to { stroke-dashoffset: 0; }
+}
+
 .delay-100 { animation-delay: 100ms; }
 .delay-200 { animation-delay: 200ms; }
 .delay-300 { animation-delay: 300ms; }
+
+.brand-gradient {
+  background: var(--brand-gradient);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-chart-line {
+    animation: none !important;
+    stroke-dashoffset: 0;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

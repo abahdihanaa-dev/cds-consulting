@@ -1,0 +1,39 @@
+<svg width="760" height="560" viewBox="0 0 760 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Espace d’apprentissage en marketing digital</title>
+  <desc id="desc">Tableau de bord, modules de cours et courbe de progression dans les couleurs CDS Consulting.</desc>
+  <defs>
+    <linearGradient id="screen" x1="115" y1="78" x2="650" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EAF3FF"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="180" y1="380" x2="600" y2="95" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A4BBD"/><stop offset="1" stop-color="#066FE5"/>
+    </linearGradient>
+    <filter id="shadow" x="50" y="32" width="670" height="500" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#03152E" flood-opacity=".2"/>
+    </filter>
+  </defs>
+  <circle cx="657" cy="95" r="67" fill="#FFFFFF" fill-opacity=".08"/>
+  <circle cx="105" cy="455" r="92" fill="#5890D8" fill-opacity=".16"/>
+  <g filter="url(#shadow)">
+    <rect x="92" y="62" width="576" height="408" rx="28" fill="url(#screen)"/>
+    <rect x="92" y="62" width="576" height="58" rx="28" fill="#092149"/>
+    <circle cx="126" cy="91" r="7" fill="#5890D8"/><circle cx="150" cy="91" r="7" fill="#066FE5"/><circle cx="174" cy="91" r="7" fill="#DCE4EF"/>
+    <rect x="124" y="151" width="150" height="282" rx="18" fill="#F4F8FD"/>
+    <rect x="146" y="178" width="88" height="12" rx="6" fill="#092149" fill-opacity=".78"/>
+    <rect x="146" y="213" width="105" height="70" rx="14" fill="#066FE5"/>
+    <path d="M170 252l14-16 13 10 24-24" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M215 222h10v10" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="146" y="303" width="105" height="14" rx="7" fill="#DCE4EF"/><rect x="146" y="327" width="82" height="14" rx="7" fill="#DCE4EF"/><rect x="146" y="351" width="95" height="14" rx="7" fill="#DCE4EF"/>
+    <rect x="304" y="151" width="332" height="146" rx="18" fill="#FFFFFF" stroke="#DCE4EF"/>
+    <rect x="328" y="176" width="112" height="12" rx="6" fill="#092149" fill-opacity=".74"/>
+    <path d="M335 263C375 239 397 249 430 220C464 190 502 239 548 188C568 166 588 172 608 158" stroke="url(#blue)" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="430" cy="220" r="8" fill="#066FE5"/><circle cx="548" cy="188" r="8" fill="#0A4BBD"/>
+    <rect x="304" y="321" width="98" height="112" rx="18" fill="#FFFFFF" stroke="#DCE4EF"/>
+    <rect x="421" y="321" width="98" height="112" rx="18" fill="#FFFFFF" stroke="#DCE4EF"/>
+    <rect x="538" y="321" width="98" height="112" rx="18" fill="#FFFFFF" stroke="#DCE4EF"/>
+    <circle cx="353" cy="361" r="18" fill="#EAF3FF"/><path d="M343 361l7 7 14-17" stroke="#066FE5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="470" cy="361" r="18" fill="#EAF3FF"/><path d="M460 361l7 7 14-17" stroke="#066FE5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="587" cy="361" r="18" fill="#EAF3FF"/><path d="M577 361l7 7 14-17" stroke="#066FE5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="331" y="397" width="44" height="9" rx="4.5" fill="#DCE4EF"/><rect x="448" y="397" width="44" height="9" rx="4.5" fill="#DCE4EF"/><rect x="565" y="397" width="44" height="9" rx="4.5" fill="#DCE4EF"/>
+  </g>
+</svg>

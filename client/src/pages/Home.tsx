@@ -1,4 +1,6 @@
 import { Layout } from "@/components/Layout";
+import { Formations } from "@/components/Formations";
+import { HeroAnalyticsDashboard } from "@/components/HeroAnalyticsDashboard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
@@ -10,8 +12,6 @@ import {
   Globe,
   Search,
   Target,
-  MousePointerClick,
-  Users,
   TrendingUp,
   AlertTriangle,
   Lightbulb,
@@ -38,10 +38,10 @@ export default function Home() {
       {/* 1. HERO SECTION (FIX: couvre le padding-top du main) */}
       <section
         className="
-          relative overflow-hidden bg-primary
-          -mt-[88px] md:-mt-[104px]
-          pt-[88px] md:pt-[104px]
-          pb-16 md:pb-32
+          brand-gradient relative overflow-hidden
+          -mt-[var(--header-height)]
+          pt-[var(--header-height)]
+          pb-12 md:pb-14 lg:pb-16
         "
       >
         {/* Background Gradients */}
@@ -49,7 +49,7 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 translate-y-12 -translate-x-12 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
 
         <div className="container-custom relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center py-10 md:py-16 lg:py-20">
+          <div className="grid items-center gap-12 py-10 md:py-12 lg:grid-cols-2 lg:py-14">
             {/* Text Content */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -57,7 +57,7 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="text-center lg:text-left"
             >
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-accent text-xs font-bold mb-6">
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-bold text-blue-100">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
@@ -67,7 +67,7 @@ export default function Home() {
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-[1.1] mb-6">
                 Digitalisez. <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-orange-300">
+                <span className="bg-gradient-to-r from-blue-200 to-white bg-clip-text text-transparent">
                   Attirez.
                 </span>{" "}
                 <br />
@@ -89,7 +89,7 @@ export default function Home() {
                 <Link href="/services">
                   <Button
                     variant="outline"
-                    className="h-14 px-8 text-lg bg-transparent border-slate-600 text-white hover:bg-white/10 hover:border-white rounded-xl transition-all"
+                    className="h-14 rounded-xl border-white bg-white px-8 text-lg text-primary transition-all hover:border-blue-100 hover:bg-blue-50 hover:text-accent"
                   >
                     Voir nos services
                   </Button>
@@ -109,64 +109,7 @@ export default function Home() {
             </motion.div>
 
             {/* Hero Visual */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative hidden lg:block"
-            >
-              <div className="relative z-10 bg-slate-800/50 backdrop-blur-xl border border-slate-700 rounded-2xl p-6 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                {/* Hero Dashboard Graphic Mockup */}
-                <div className="bg-slate-900 rounded-xl p-4 mb-4 border border-slate-800">
-                  <div className="flex justify-between items-center mb-6">
-                    <div>
-                      <div className="text-xs text-slate-400 mb-1">
-                        Revenus mensuels
-                      </div>
-                      <div className="text-2xl font-bold text-white">
-                        42 850 €
-                      </div>
-                    </div>
-                    <div className="bg-green-500/20 text-green-400 text-xs px-2 py-1 rounded flex items-center gap-1">
-                      <TrendingUp className="w-3 h-3" /> +124%
-                    </div>
-                  </div>
-                  <div className="h-32 flex items-end gap-2">
-                    {[30, 45, 35, 60, 55, 75, 85].map((h, i) => (
-                      <div
-                        key={i}
-                        className="flex-1 bg-accent/80 rounded-t-sm hover:bg-accent transition-colors"
-                        style={{ height: `${h}%` }}
-                      />
-                    ))}
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-slate-900 p-4 rounded-xl border border-slate-800">
-                    <div className="flex items-center gap-2 mb-2">
-                      <Users className="w-4 h-4 text-blue-400" />
-                      <span className="text-slate-400 text-xs">
-                        Nouveaux leads
-                      </span>
-                    </div>
-                    <div className="text-xl font-bold text-white">1,248</div>
-                  </div>
-                  <div className="bg-slate-900 p-4 rounded-xl border border-slate-800">
-                    <div className="flex items-center gap-2 mb-2">
-                      <MousePointerClick className="w-4 h-4 text-purple-400" />
-                      <span className="text-slate-400 text-xs">
-                        Taux de conversion
-                      </span>
-                    </div>
-                    <div className="text-xl font-bold text-white">4.8%</div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Decorative elements behind */}
-              <div className="absolute top-10 -right-10 w-full h-full border-2 border-dashed border-slate-700 rounded-2xl -z-10 rotate-6" />
-            </motion.div>
+            <HeroAnalyticsDashboard />
           </div>
         </div>
       </section>
@@ -199,13 +142,13 @@ export default function Home() {
               <p>
                 Pire encore : la visibilité organique baisse chaque année. Sans
                 une stratégie active (SEO ou Publicité), vous devenez invisible.
-                C.D.CALL vous remet dans la lumière.
+                CDS Consulting vous remet dans la lumière.
               </p>
             </div>
 
-            <div className="bg-slate-50 border border-red-100 rounded-2xl p-8 shadow-sm">
+            <div className="rounded-2xl border border-blue-100 bg-background p-8 shadow-sm">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center text-red-600">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 text-accent">
                   <AlertTriangle className="w-5 h-5" />
                 </div>
                 <h3 className="text-xl font-bold text-slate-800">
@@ -226,7 +169,7 @@ export default function Home() {
                     key={i}
                     className="flex items-start gap-3 text-slate-600 text-sm"
                   >
-                    <span className="text-red-500 font-bold">✗</span>
+                    <span className="font-bold text-accent">✗</span>
                     {error}
                   </li>
                 ))}
@@ -260,26 +203,26 @@ export default function Home() {
                 title: "SEO & Contenu",
                 desc: "Positionnez-vous sur les mots-clés que vos clients recherchent. Audit technique, rédaction et netlinking.",
                 ex: "Ex: 1ère page sur 'Plombier Paris'.",
-                color: "text-green-500 bg-green-50",
+                color: "text-accent bg-blue-50",
               },
               {
                 icon: Target,
                 title: "Meta Ads",
                 desc: "Campagnes Facebook & Instagram ultra-ciblées pour générer des leads qualifiés dès la première semaine.",
                 ex: "Ex: 50 leads qualifiés / mois.",
-                color: "text-purple-500 bg-purple-50",
+                color: "text-accent bg-blue-50",
               },
               {
                 icon: BarChart3,
                 title: "Tracking & Data",
                 desc: "Configuration GA4 et GTM pour comprendre exactement d'où viennent vos ventes et optimiser votre budget.",
                 ex: "Ex: Tableaux de bord en temps réel.",
-                color: "text-orange-500 bg-orange-50",
+                color: "text-accent bg-blue-50",
               },
             ].map((service, i) => (
               <Card
                 key={i}
-                className="border-none shadow-md hover:shadow-xl transition-shadow duration-300"
+                className="border border-slate-200 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-lg"
               >
                 <CardContent className="p-6">
                   <div
@@ -303,8 +246,10 @@ export default function Home() {
         </div>
       </section>
 
+      <Formations />
+
       {/* 4. OFFERS */}
-      <section className="section-padding bg-slate-900 text-white relative overflow-hidden">
+      <section className="section-padding relative overflow-hidden bg-primary text-white">
         <div
           className="absolute inset-0 opacity-10"
           style={{
@@ -377,8 +322,8 @@ export default function Home() {
                 key={i}
                 className={`relative rounded-2xl p-8 border transition-all duration-300 ${
                   pack.highlight
-                    ? "bg-slate-800 border-accent shadow-2xl shadow-accent/20 scale-105 z-10"
-                    : "bg-slate-800/50 border-slate-700 hover:border-slate-500 hover:bg-slate-800"
+                    ? "z-10 scale-[1.02] border-blue-400 bg-white/10 shadow-2xl shadow-accent/20"
+                    : "border-white/15 bg-white/5 hover:border-blue-300/50 hover:bg-white/10"
                 }`}
               >
                 {pack.highlight && (
@@ -391,7 +336,7 @@ export default function Home() {
                 <h3
                   className={`text-2xl font-bold mb-2 text-transparent bg-clip-text ${
                     pack.highlight
-                      ? "bg-gradient-to-r from-blue-400 to-cyan-300"
+                      ? "bg-gradient-to-r from-blue-300 to-white"
                       : "bg-gradient-to-r from-blue-300 to-blue-500"
                   }`}
                 >
@@ -596,7 +541,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Prêt à passer au niveau supérieur ?
           </h2>
-          <p className="text-orange-100 text-lg mb-8 max-w-2xl mx-auto">
+          <p className="mb-8 max-w-2xl mx-auto text-lg text-blue-100">
             N&apos;attendez plus que les clients viennent à vous. Allez les chercher.
           </p>
           <Link href="/audit-contact">

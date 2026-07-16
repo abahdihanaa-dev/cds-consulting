@@ -31,7 +31,7 @@ const items = [
 export default function PolitiqueConfidentialite() {
   return (
     <Layout>
-      <div className="bg-primary relative overflow-hidden -mt-[88px] md:-mt-[104px] pt-[88px] md:pt-[104px] pb-20">
+      <div className="brand-gradient relative overflow-hidden -mt-[76px] md:-mt-[88px] pt-[76px] md:pt-[88px] pb-20">
         <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
         <div className="container-custom relative z-10 py-12 md:py-16 text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm text-slate-200 mb-6">
@@ -58,7 +58,7 @@ export default function PolitiqueConfidentialite() {
             ))}
           </div>
 
-          <div className="bg-slate-900 rounded-2xl shadow-xl p-8 lg:p-10 text-white self-start h-auto min-h-[270px]">
+          <div className="h-auto min-h-[270px] self-start rounded-2xl bg-primary p-8 text-white shadow-xl lg:p-10">
             <div className="flex items-center gap-4">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/20 text-accent ring-1 ring-accent/20">
                 <ShieldCheck className="h-6 w-6" />

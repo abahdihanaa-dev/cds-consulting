@@ -2,5 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://cdcall.fr/sitemap.xml
-Host: https://cdcall.fr
+Sitemap: https://cdsconsulting.fr/sitemap.xml
+Host: https://cdsconsulting.fr

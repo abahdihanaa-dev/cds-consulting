@@ -13,7 +13,10 @@ export async function registerRoutes(
     try {
       const input = api.contact.submit.input.parse(req.body);
       await storage.createContactSubmission(input);
-      res.json({ success: true, message: "Contact details received" });
+      res.json({
+        success: true,
+        message: "Votre demande a bien été reçue.",
+      });
     } catch (err) {
        if (err instanceof z.ZodError) {
         res.status(400).json({

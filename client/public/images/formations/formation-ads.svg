@@ -1,0 +1,29 @@
+<svg width="760" height="560" viewBox="0 0 760 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Tableau de bord publicitaire</title>
+  <desc id="desc">Interface de campagnes, audiences, annonces et graphiques de performance fictifs.</desc>
+  <defs>
+    <linearGradient id="bg" x1="80" y1="50" x2="690" y2="510" gradientUnits="userSpaceOnUse"><stop stop-color="#EAF3FF"/><stop offset="1" stop-color="#F8FAFD"/></linearGradient>
+    <linearGradient id="line" x1="250" y1="318" x2="625" y2="196" gradientUnits="userSpaceOnUse"><stop stop-color="#0A4BBD"/><stop offset="1" stop-color="#066FE5"/></linearGradient>
+    <filter id="s" x="38" y="24" width="686" height="520" filterUnits="userSpaceOnUse"><feDropShadow dx="0" dy="15" stdDeviation="16" flood-color="#092149" flood-opacity=".12"/></filter>
+  </defs>
+  <rect x="30" y="28" width="700" height="504" rx="42" fill="url(#bg)"/>
+  <circle cx="652" cy="95" r="58" fill="#066FE5" fill-opacity=".09"/>
+  <g filter="url(#s)">
+    <rect x="72" y="65" width="616" height="430" rx="24" fill="white"/>
+    <rect x="72" y="65" width="150" height="430" rx="24" fill="#092149"/>
+    <circle cx="112" cy="110" r="16" fill="#066FE5"/><path d="M105 110h14M112 103v14" stroke="white" stroke-width="4" stroke-linecap="round"/>
+    <rect x="101" y="154" width="91" height="12" rx="6" fill="#5890D8"/>
+    <rect x="101" y="190" width="74" height="10" rx="5" fill="white" fill-opacity=".34"/><rect x="101" y="224" width="86" height="10" rx="5" fill="white" fill-opacity=".34"/><rect x="101" y="258" width="62" height="10" rx="5" fill="white" fill-opacity=".34"/>
+    <rect x="250" y="97" width="180" height="75" rx="16" fill="#F4F8FD"/><circle cx="280" cy="135" r="18" fill="#D9EBFF"/><path d="M272 140v-9l16-8v20l-16-3z" stroke="#066FE5" stroke-width="4" stroke-linejoin="round"/><rect x="312" y="120" width="82" height="10" rx="5" fill="#092149" fill-opacity=".7"/><rect x="312" y="143" width="58" height="8" rx="4" fill="#5890D8"/>
+    <rect x="449" y="97" width="207" height="75" rx="16" fill="#F4F8FD"/><circle cx="482" cy="135" r="18" fill="#D9EBFF"/><circle cx="482" cy="130" r="6" stroke="#066FE5" stroke-width="3"/><path d="M469 146c4-8 22-8 26 0" stroke="#066FE5" stroke-width="3" stroke-linecap="round"/><rect x="514" y="120" width="106" height="10" rx="5" fill="#092149" fill-opacity=".7"/><rect x="514" y="143" width="72" height="8" rx="4" fill="#5890D8"/>
+    <rect x="250" y="195" width="406" height="183" rx="18" fill="#FFFFFF" stroke="#DCE4EF"/>
+    <rect x="276" y="219" width="116" height="11" rx="5.5" fill="#092149" fill-opacity=".72"/>
+    <path d="M280 341h344" stroke="#DCE4EF" stroke-width="2"/>
+    <path d="M286 326C331 310 349 327 386 290C420 256 449 307 490 268C527 232 559 274 618 218" stroke="url(#line)" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="386" cy="290" r="7" fill="#0A4BBD"/><circle cx="490" cy="268" r="7" fill="#066FE5"/><circle cx="618" cy="218" r="7" fill="#066FE5"/>
+    <rect x="250" y="401" width="124" height="62" rx="14" fill="#F4F8FD"/><rect x="391" y="401" width="124" height="62" rx="14" fill="#F4F8FD"/><rect x="532" y="401" width="124" height="62" rx="14" fill="#F4F8FD"/>
+    <rect x="270" y="418" width="54" height="8" rx="4" fill="#5890D8"/><rect x="270" y="438" width="81" height="10" rx="5" fill="#092149" fill-opacity=".72"/>
+    <rect x="411" y="418" width="54" height="8" rx="4" fill="#5890D8"/><rect x="411" y="438" width="81" height="10" rx="5" fill="#092149" fill-opacity=".72"/>
+    <rect x="552" y="418" width="54" height="8" rx="4" fill="#5890D8"/><rect x="552" y="438" width="81" height="10" rx="5" fill="#092149" fill-opacity=".72"/>
+  </g>
+</svg>

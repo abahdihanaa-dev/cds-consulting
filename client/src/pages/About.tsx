@@ -1,25 +1,16 @@
 import { Layout } from "@/components/Layout";
+import { PageHero } from "@/components/PageHero";
 import { CheckCircle2, Rocket, Heart, Shield } from "lucide-react";
 
 export default function About() {
   return (
     <Layout>
-      {/* HERO: couvre le padding-top du main (supprime la bande blanche) */}
-      <div className="bg-primary relative overflow-hidden -mt-[88px] md:-mt-[104px] pt-[88px] md:pt-[104px] pb-24 md:pb-28">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+      <PageHero
+        title="Notre Mission"
+        description="Démocratiser la performance digitale pour les entreprises ambitieuses. Nous ne vendons pas des sites web, nous vendons de la croissance."
+      />
 
-        <div className="container-custom relative z-10 text-center py-10 md:py-14">
-          <h1 className="text-4xl md:text-6xl font-display font-bold text-white mb-6">
-            Notre Mission
-          </h1>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            Démocratiser la performance digitale pour les entreprises ambitieuses.
-            Nous ne vendons pas des sites web, nous vendons de la croissance.
-          </p>
-        </div>
-      </div>
-
-      <div className="container-custom -mt-12 md:-mt-16 relative z-20 pb-24">
+      <div className="container-custom relative z-20 -mt-8 pb-20 md:-mt-14 md:pb-24">
         <div className="grid md:grid-cols-3 gap-8 mb-24">
           {[
             {
@@ -55,14 +46,14 @@ export default function About() {
           <div>
            <h2 className="text-3xl font-bold mb-6">
               Pourquoi faire confiance à{" "}
-             <span className="text-accent font-extrabold">C.D.CALL</span> ?
+             <span className="text-accent font-extrabold">CDS Consulting</span> ?
           </h2>
 
             <div className="space-y-4 text-slate-600 leading-relaxed">
               <p>
                 Trop d&apos;agences se contentent de livrer &quot;du joli&quot;.
                 Un beau site qui ne convertit pas est une dépense inutile. Chez
-                C.D.CALL, nous venons du monde de la performance.
+                CDS Consulting, nous venons du monde de la performance.
               </p>
               <p>
                 Nous savons que le design n&apos;est qu&apos;un outil au service

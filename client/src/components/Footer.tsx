@@ -1,5 +1,4 @@
 import { Link } from "wouter";
-import logo from "@assets/cdcall-logo.png";
 import {
   Facebook,
   Instagram,
@@ -9,30 +8,29 @@ import {
 } from "lucide-react";
 
 export function Footer() {
+  // TODO(CDS): valider les réseaux sociaux, l’adresse, l’email et le téléphone officiels.
+  // Les coordonnées historiques restent en place afin de ne casser aucun contact existant.
   return (
-    <footer className="bg-slate-900 text-slate-300 border-t border-slate-800">
+    <footer className="border-t border-white/10 bg-primary text-blue-100">
       <div className="container-custom py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           
           {/* Brand */}
           <div className="space-y-6">
-            <Link href="/" className="flex items-center gap-3">
-              {/* Logo (fix: pas de invert/brightness) */}
+            <Link href="/" className="inline-flex items-center rounded-xl bg-white p-2" aria-label="CDS Consulting — Accueil">
               <div className="flex items-center justify-center">
                 <img
-                  src={logo}
-                  alt="Logo C.D.CALL"
-                  className="h-10 md:h-11 w-auto object-contain"
+                  src="/assets/cds-consulting-logo.png"
+                  alt="CDS Consulting"
+                  width="1000"
+                  height="500"
+                  className="h-auto w-[176px] object-contain"
                   loading="lazy"
                 />
               </div>
-
-              <span className="text-white font-display font-bold text-xl">
-                C.D.<span className="text-accent">CALL</span>
-              </span>
             </Link>
 
-            <p className="text-slate-400 leading-relaxed text-sm">
+            <p className="text-blue-100/75 leading-relaxed text-sm">
               Une approche orientée ROI pour digitaliser, attirer et convertir.
               Nous transformons votre présence en ligne en moteur de croissance.
             </p>
@@ -42,13 +40,13 @@ export function Footer() {
                 {
                   Icon: Facebook,
                   label: "Facebook",
-                  href: "https://web.facebook.com/profile.php?id=61587047591941",
+                  href: "https://web.facebook.com/people/CDSconsulting/61591866566614/",
                 },
-                {
-                  Icon: Instagram,
-                  label: "Instagram",
-                  href: "https://www.instagram.com/c.d.call1/",
-                },
+                //{
+                //  Icon: Instagram,
+                 // label: "Instagram",
+                //  href: "https://www.instagram.com/c.d.call1/",
+               // },
               ].map(({ Icon, label, href }) => (
                 <a
                   key={label}
@@ -56,7 +54,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-accent hover:text-white transition-all duration-300"
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-blue-100 transition-all duration-300 hover:bg-accent hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
                 >
                   <Icon className="w-5 h-5" />
                 </a>
@@ -72,6 +70,7 @@ export function Footer() {
                 { name: "Accueil", href: "/" },
                 { name: "À Propos", href: "/a-propos" },
                 { name: "Services", href: "/services" },
+                { name: "Formations", href: "/formations" },
                 { name: "Audit Gratuit", href: "/audit-contact" },
               ].map((link) => (
                 <li key={link.name}>
@@ -106,21 +105,21 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-accent shrink-0 mt-1" />
                 <span>
-                  2 Rue du Palatin 42110 Feurs 
+                  82, Rue Soumaya, Residence Chehrazade 1, 3 Eme Etage, N°13, Palmiers - Casablanca 
                 </span>
               </li>
 
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-accent shrink-0" />
-                <a href="mailto:contact@cdcall.fr" className="hover:text-white">
-                  contact@cdcall.fr
+                <a href="mailto:contact@cdsconsulting.fr" className="hover:text-white">
+                  contact@cdsconsulting.fr
                 </a>
               </li>
 
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-accent shrink-0" />
                 <a href="tel:+33745049370" className="hover:text-white">
-                  +33 745 04 93 70
+                  +33 7 45 04 93 70
                 </a>
               </li>
             </ul>
@@ -129,7 +128,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-          <p>© {new Date().getFullYear()} C.D.CALL. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} CDS Consulting. Tous droits réservés.</p>
 
           <div className="flex gap-6">
             <Link href="/mentions-legales" className="hover:text-white transition-colors">

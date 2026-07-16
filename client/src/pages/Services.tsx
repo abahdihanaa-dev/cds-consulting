@@ -1,4 +1,5 @@
 import { Layout } from "@/components/Layout";
+import { PageHero } from "@/components/PageHero";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Globe, Search, Target, BarChart3, Check } from "lucide-react";
@@ -11,20 +12,19 @@ const colorClasses = {
     checkIcon: "text-blue-600",
   },
   green: {
-    iconWrap: "bg-green-600",
-    checkWrap: "bg-green-100",
-    checkIcon: "text-green-600",
+    iconWrap: "bg-accent",
+    checkWrap: "bg-blue-100",
+    checkIcon: "text-accent",
   },
   purple: {
-    iconWrap: "bg-purple-600",
-    checkWrap: "bg-purple-100",
-    checkIcon: "text-purple-600",
+    iconWrap: "bg-accent",
+    checkWrap: "bg-blue-100",
+    checkIcon: "text-accent",
   },
   orange: {
-    // ton bouton utilise bg-accent, donc on garde la même logique ici
     iconWrap: "bg-accent",
-    checkWrap: "bg-orange-100",
-    checkIcon: "text-orange-600",
+    checkWrap: "bg-blue-100",
+    checkIcon: "text-accent",
   },
 } as const;
 
@@ -74,11 +74,11 @@ export default function Services() {
     {
       id: "ads",
       icon: Target,
-      title: "Publicité Meta Ads",
+      title: "Publicité Meta Ads & Google Ads",
       subtitle: "Accélérez votre croissance instantanément",
-      desc: "Nous ciblons vos clients idéaux sur Facebook et Instagram avec des créatifs percutants. Une approche mathématique : 1€ investi doit rapporter plus.",
+      desc: "Nous ciblons vos clients idéaux sur Facebook, Instagram et Google avec des campagnes structurées, mesurables et continuellement optimisées.",
       details: [
-        "Stratégie d'audience",
+        "Stratégie d'audience et de mots-clés",
         "Création des visuels/vidéos",
         "A/B Testing continu",
         "Scaling des campagnes",
@@ -105,37 +105,12 @@ export default function Services() {
 
   return (
     <Layout>
-      {/* HERO (FIX: couvre le padding-top du main) */}
-      <div
-        className="
-          bg-primary relative overflow-hidden
-          -mt-[88px] md:-mt-[104px]
-          pt-[88px] md:pt-[104px]
-          pb-16 md:pb-20
-        "
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/50 to-primary pointer-events-none" />
-        <div className="container-custom text-center relative z-10 py-10 md:py-14">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-bold mb-6 text-white"
-          >
-            Nos Services
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="text-xl text-slate-300 max-w-2xl mx-auto"
-          >
-            Une suite complète d&apos;expertises pour couvrir l&apos;intégralité
-            de votre tunnel de vente.
-          </motion.p>
-        </div>
-      </div>
+      <PageHero
+        title="Nos Services"
+        description="Une suite complète d’expertises pour couvrir l’intégralité de votre tunnel de vente."
+      />
 
-      <div className="container-custom py-24 space-y-32">
+      <div className="container-custom space-y-20 py-16 md:space-y-28 md:py-20 lg:py-24">
         {services.map((service, i) => {
           const c = colorClasses[service.color];
 
@@ -209,12 +184,12 @@ export default function Services() {
                     transition={{ delay: 0.3 }}
                     className="absolute bottom-6 left-6 right-6 p-6 bg-white/10 backdrop-blur-xl rounded-2xl border border-white/20"
                   >
-                    <div className="h-2 bg-accent w-12 rounded-full mb-4 shadow-[0_0_15px_rgba(249,115,22,0.5)]" />
+                    <div className="mb-4 h-2 w-12 rounded-full bg-accent shadow-lg shadow-accent/30" />
                     <div className="text-white font-bold text-lg">
                       Performance & Acquisition
                     </div>
                     <div className="text-slate-300 text-sm mt-1">
-                      Expertise certifiée par C.D.CALL
+                      Expertise proposée par CDS Consulting
                     </div>
                   </motion.div>
                 </motion.div>

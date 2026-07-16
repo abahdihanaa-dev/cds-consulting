@@ -1,0 +1,21 @@
+{
+  "name": "CDS Consulting",
+  "short_name": "CDS",
+  "description": "Stratégie digitale, publicité et croissance.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4F8FD",
+  "theme_color": "#092149",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ]
+}

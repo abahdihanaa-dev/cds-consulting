@@ -2,15 +2,17 @@ import { Layout } from "@/components/Layout";
 import { Scale, ShieldCheck, Mail, MapPin, Phone, Globe } from "lucide-react";
 
 const sections = [
+  // TODO(CDS): valider la raison sociale, le domaine et les coordonnées légales
+  // avant de remplacer les informations historiques  cds consulting ci-dessous.
   {
     title: "Éditeur du site",
     content:
-      "Le site web C.D.CALL est édité par C.D.CALL. Le site est accessible à l’adresse https://www.cdcall.fr (ou à toute autre URL de redirection utilisée par l’entreprise).",
+      "Le site web  cds consulting est édité par cds consulting. Le site est accessible à l’adresse https://www.cdsconsulting.fr (ou à toute autre URL de redirection utilisée par l’entreprise).",
   },
   {
     title: "Coordonnées",
     content:
-      "C.D.CALL – 2 Rue du Palatin, 42110 Feurs, France. Téléphone : +33 7 45 04 93 70. Email : contact@cdcall.fr.",
+      " cds consulting – 2 Rue du Palatin, 42110 Feurs, France. Téléphone : +33 7 45 04 93 70. Email : contact@cdsconsulting.fr",
   },
   {
     title: "Hébergement",
@@ -25,7 +27,7 @@ const sections = [
   {
     title: "Responsabilité",
     content:
-      "C.D.CALL s’efforce de fournir des informations exactes et à jour. Elle ne saurait être tenue responsable des erreurs, omissions ou conséquences liées à l’utilisation du site ou à l’impossibilité d’y accéder.",
+      " cds consulting s’efforce de fournir des informations exactes et à jour. Elle ne saurait être tenue responsable des erreurs, omissions ou conséquences liées à l’utilisation du site ou à l’impossibilité d’y accéder.",
   },
   {
     title: "Droit applicable",
@@ -37,7 +39,7 @@ const sections = [
 export default function MentionsLegales() {
   return (
     <Layout>
-      <div className="bg-primary relative overflow-hidden -mt-[88px] md:-mt-[104px] pt-[88px] md:pt-[104px] pb-20">
+      <div className="brand-gradient relative overflow-hidden -mt-[76px] md:-mt-[88px] pt-[76px] md:pt-[88px] pb-20">
         <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
         <div className="container-custom relative z-10 py-12 md:py-16 text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm text-slate-200 mb-6">
@@ -64,7 +66,7 @@ export default function MentionsLegales() {
             ))}
           </div>
 
-          <div className="bg-[#0f172a] rounded-2xl shadow-xl p-8 lg:p-10 text-white self-start h-auto min-h-[300px]">
+          <div className="h-auto min-h-[300px] self-start rounded-2xl bg-primary p-8 text-white shadow-xl lg:p-10">
             <div className="flex items-center gap-4">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/20 text-accent ring-1 ring-accent/20">
                 <ShieldCheck className="h-6 w-6" />

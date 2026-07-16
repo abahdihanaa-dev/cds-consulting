@@ -1,0 +1,30 @@
+<svg width="760" height="560" viewBox="0 0 760 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Interface de boutique en ligne</title>
+  <desc id="desc">Fiche produit, panier, paiement et suivi des conversions dans une interface fictive.</desc>
+  <defs>
+    <linearGradient id="bg" x1="50" y1="38" x2="720" y2="522" gradientUnits="userSpaceOnUse"><stop stop-color="#F8FAFD"/><stop offset="1" stop-color="#E6F1FF"/></linearGradient>
+    <linearGradient id="product" x1="160" y1="176" x2="330" y2="352" gradientUnits="userSpaceOnUse"><stop stop-color="#066FE5"/><stop offset="1" stop-color="#092149"/></linearGradient>
+    <filter id="s" x="31" y="28" width="699" height="510" filterUnits="userSpaceOnUse"><feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#092149" flood-opacity=".12"/></filter>
+  </defs>
+  <rect x="30" y="28" width="700" height="504" rx="42" fill="url(#bg)"/>
+  <circle cx="113" cy="455" r="66" fill="#066FE5" fill-opacity=".08"/>
+  <g filter="url(#s)">
+    <rect x="68" y="65" width="624" height="430" rx="24" fill="white"/>
+    <rect x="68" y="65" width="624" height="58" rx="24" fill="#092149"/>
+    <circle cx="105" cy="94" r="7" fill="#5890D8"/><circle cx="130" cy="94" r="7" fill="#066FE5"/><circle cx="155" cy="94" r="7" fill="#DCE4EF"/>
+    <rect x="493" y="84" width="132" height="20" rx="10" fill="white" fill-opacity=".12"/><path d="M644 85h16l-3 13h-10l-3-13z" stroke="white" stroke-width="3" stroke-linejoin="round"/><circle cx="648" cy="103" r="2" fill="white"/><circle cx="657" cy="103" r="2" fill="white"/>
+    <rect x="102" y="154" width="242" height="278" rx="20" fill="#F4F8FD"/>
+    <rect x="130" y="180" width="186" height="176" rx="24" fill="url(#product)"/>
+    <path d="M181 235h84l-10 78h-64l-10-78z" fill="white" fill-opacity=".94"/><path d="M201 235c0-28 44-28 44 0" stroke="white" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="154" cy="384" r="9" fill="#066FE5"/><circle cx="184" cy="384" r="9" fill="#5890D8"/><circle cx="214" cy="384" r="9" fill="#092149"/>
+    <rect x="373" y="154" width="283" height="129" rx="18" fill="#FFFFFF" stroke="#DCE4EF"/>
+    <rect x="398" y="179" width="153" height="13" rx="6.5" fill="#092149" fill-opacity=".76"/><rect x="398" y="207" width="217" height="9" rx="4.5" fill="#DCE4EF"/><rect x="398" y="228" width="181" height="9" rx="4.5" fill="#DCE4EF"/>
+    <rect x="398" y="253" width="112" height="13" rx="6.5" fill="#066FE5"/>
+    <rect x="373" y="306" width="137" height="126" rx="18" fill="#F4F8FD"/>
+    <circle cx="411" cy="344" r="18" fill="#D9EBFF"/><path d="M400 337h20l-3 16h-13l-4-16zM407 359h1M415 359h1" stroke="#066FE5" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="398" y="380" width="87" height="9" rx="4.5" fill="#092149" fill-opacity=".68"/><rect x="398" y="402" width="65" height="8" rx="4" fill="#5890D8"/>
+    <rect x="529" y="306" width="127" height="126" rx="18" fill="#F4F8FD"/>
+    <rect x="551" y="330" width="18" height="56" rx="6" fill="#BFDFFF"/><rect x="579" y="351" width="18" height="35" rx="6" fill="#5890D8"/><rect x="607" y="318" width="18" height="68" rx="6" fill="#066FE5"/>
+    <path d="M551 402c19-14 34 2 48-14 10-12 17-13 29-25" stroke="#0A4BBD" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>
